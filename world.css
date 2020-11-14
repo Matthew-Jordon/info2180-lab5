@@ -1,1 +1,38 @@
-/* Add your own styles */
+body {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    font-size: 25px;
+    background-color: rgb(176, 173, 179);
+}
+
+header {
+    text-align: center;
+    background-color: royalblue;
+    color: aliceblue;
+    padding: 10px;
+}
+
+#controls {
+    padding: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#country {
+    width: 50%;
+    height: 30px;
+}
+
+#lookup {
+    border-style: none;
+    margin-left: 2px;
+    color: aliceblue;
+    background-color: royalblue;
+    border-radius: 10%;
+}
+
+#result {
+    margin-left: 22.5%;
+}
