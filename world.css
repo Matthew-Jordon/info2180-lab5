@@ -4,6 +4,7 @@ body {
     margin: 0%;
     font-size: 25px;
     background-color: rgb(176, 173, 179);
+    grid-template-areas: 'header header header''body body body';
 }
 
 header {
@@ -11,26 +12,48 @@ header {
     background-color: royalblue;
     color: aliceblue;
     padding: 10px;
+    grid-area: header;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    grid-area: body;
+    width: 100%;
 }
 
 #controls {
-    padding: 100px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    padding: 100px;  
+    width: 50%; 
+    align-self: center;
+}
+
+#buttons {
+    margin-left: auto;
+    margin-left: 30%;
+    padding: 10px;
 }
 
 #country {
-    width: 50%;
+    width: 60%;
     height: 30px;
+    align-self: start;
 }
 
-#lookup {
+#countries{
     border-style: none;
-    margin-left: 2px;
     color: aliceblue;
     background-color: royalblue;
     border-radius: 10%;
+    height: 25px;
+}
+#cities {
+    border-style: none;
+    background-color: greenyellow;
+    border-radius: 10%;
+    height: 25px;
 }
 
 #result {
